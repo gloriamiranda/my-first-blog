@@ -30,7 +30,7 @@ SECRET_KEY = 'r=)*s_of(cw#sdnnyf-lcf*1-srim_w8@ak@iz=0$ff=)q!ywq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'os.pythonanywhere.com','http://gloriamiranda.pythonanywhere.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'os.pythonanywhere.com','gloriamiranda.pythonanywhere.com']
 
 
 # Application definition
