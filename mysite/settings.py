@@ -15,10 +15,11 @@ import os
 import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-#BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+#BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
+#BASE_DIR = bb
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -29,7 +30,7 @@ SECRET_KEY = 'r=)*s_of(cw#sdnnyf-lcf*1-srim_w8@ak@iz=0$ff=)q!ywq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'os.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'os.pythonanywhere.com','http://gloriamiranda.pythonanywhere.com/']
 
 
 # Application definition
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / "db.sqlite3"),
+        'NAME': BASE_DIR / "db.sqlite3",
         }
 }
 
